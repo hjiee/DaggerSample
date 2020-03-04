@@ -1,4 +1,4 @@
-package com.github.gitawards.base
+package com.hyden.daggersample.base
 
 import androidx.lifecycle.ViewModel
 
