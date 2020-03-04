@@ -1,15 +1,12 @@
 package com.hyden.daggersample.di
 
-import com.hyden.daggersample.MainViewModel
+import com.hyden.daggersample.base.BaseApplication
 import dagger.Component
 
-@Component(
-    modules = [
-        (NetworkModule::class),
-        (DiModule::class),
-        (MainViewModel::class)
-    ]
-)
+@Component(modules = [
+        (NetworkModule::class)])
 interface GithubComponent {
-    fun inject()
+
+
+    fun inject(app : BaseApplication)
 }
